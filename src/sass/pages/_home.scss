@@ -28,9 +28,9 @@
 .pictures-body {
     display: flex;
     width: 100%;
-    overflow: scroll;
+    overflow-x: auto;
     gap: 13px;
-    padding: 20px 5px;
+    padding: 20px 10px;
 }
 .album-body__item {
     display: flex;

@@ -1,0 +1,11 @@
+.header-promo-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    & a {
+        display: flex;
+    }
+}
+.arrow-back {
+    margin-right: .5rem;
+}

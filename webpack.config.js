@@ -74,7 +74,7 @@ module.exports = {
             }
 		}),
         new HtmlWebpackPlugin(generateHTML('promo')), // Генерация доп страниц HTML
-        new HtmlWebpackPlugin(generateHTML('new')),
+        // new HtmlWebpackPlugin(generateHTML('new')),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: `css/${filename('css')}`
