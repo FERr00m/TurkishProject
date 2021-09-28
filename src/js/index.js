@@ -5,18 +5,14 @@ import '@/css/style';
 //import $ from 'jquery';
 
 //import images
-import adminBG from '@/img/adminBG';
-import supernova from '@/img/supernova';
-import butterfly from '@/img/butterfly';
-import html5 from '@/img/html-5';
-import bear from '@/img/bear';
-import webp from '@/img/webp';
+import more from '@/img/more';
+import burger from '@/img/burger';
+import item from '@/img/item';
+
 
 //import js
-import alerts from "./modules/alerts";
-import other from './modules/other';
+import burgerMenu from "./modules/burgerMenu";
 
 
 //launch js modules
-alerts();
-other();
+burgerMenu();

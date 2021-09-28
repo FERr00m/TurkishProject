@@ -15,21 +15,21 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 /// @type Color
 $text-color: rgb(0, 0, 0) !default;
 
+/// Body background color
+/// @type Color
+$BGbody: rgb(247, 237, 229);
+
 /// Main brand color
 /// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+$brand-color: rgb(169, 29, 238) !default;
 
-/// Light grey
+/// Main title color
 /// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+$title-color: rgb(255, 255, 255) !default;
 
-/// Medium grey
+/// Main gradient color
 /// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
+$main-gradient: linear-gradient(90deg, rgba(0,4,198,1) 0%, rgba(169,29,238,1) 50%);
 
 
 /// Container's maximum width
@@ -42,9 +42,9 @@ $max-width: 1180px !default;
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 
 $container-size: (
-  'xxxs': 330px,
-  'xxs': 350px,
-  'xs': 400px,
+  'xxxs': 100%,
+  'xxs': 100%,
+  'xs': 100%,
   'sm': 540px,
   'md': 720px,
   'lg': 960px,

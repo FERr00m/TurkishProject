@@ -197,7 +197,7 @@ module.exports = {
         client: {
             overlay: {
                 errors: true,
-                warnings: false,
+                warnings: true,
             },
             progress: true,
         },  // оверлей при ошибках

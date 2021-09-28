@@ -20,7 +20,7 @@
 .container {
   width: 100%; /* 1 */
   margin: 0 auto; /* 2 */
-  padding: 0 10px; /* 3 */
+  padding: 0 0.5rem; /* 3 */
 
   @each $point, $width in $breakpoints {
     @include respond-to($point) {

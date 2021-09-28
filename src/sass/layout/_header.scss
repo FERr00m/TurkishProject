@@ -1,10 +1,87 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
-.nav {
-    width: 200px;
-    height: 200px;
-    background-image: url('../img/adminBG.jpg');
+.header {
+    width: 100%;
+    height: 72px;
+    background: $main-gradient;
+    filter: drop-shadow(0px 0px 10px rgba(209, 211, 90, 0.5));
+    &__title {
+        margin-right: auto;
+        @include titleH1;
+    }
+}
+.header-container {
+    height: 100%;
+}
+.close-btn {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 3rem;
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-transform-origin: 50% 53%;
+    transform-origin: 50% 53%;
+    line-height: 3rem;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    color: #ffffff;
+}
+.navigation {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    opacity: .7;
+    left: 0;
+    margin: 0;
+    top: 0;
+    z-index: 99;
     display: flex;
-    @include BGcontain;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: all .5s ease;
+    &__link {
+        padding: 1.5rem;
+    }
+}
+.navigation.active-menu {
+    transform: translateX(0%);
+}
+.header-container-top {
+    display: flex;
+    align-items: center;
+    height: 70%;
+}
+.header-container-bottom {
+    display: flex;
+    align-items: end;
+    height: 30%;
+}
+.burger-menu {
+    width: 2rem;
+    height: 2rem;
+    margin-right: .5rem;
+    margin-left: -4px;
+}
+.tabs {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    &__button {
+        font-size: .8rem;
+        text-transform: uppercase;
+        color: $title-color;
+        padding: .2rem;
+        border: none;
+        background-color: transparent;
+    }
+    &__button.active {
+        background-color: $BGbody;
+        color: $text-color;
+        font-weight: bold;
+    }
 }
