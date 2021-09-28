@@ -8,6 +8,8 @@ import '@/css/style';
 import more from '@/img/more';
 import burger from '@/img/burger';
 import item from '@/img/item';
+import plants_and_animals from '@/img/plants_and_animals';
+import food from '@/img/food';
 
 
 //import js
