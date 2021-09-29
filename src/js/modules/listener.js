@@ -1,4 +1,6 @@
+import renderGameField from "./renderGameField";
 import renderPages from "./renderPages";
+
 
 const listener = () => {
     document.addEventListener('click', e => {
@@ -8,6 +10,8 @@ const listener = () => {
             renderPages('pages/choice', attr);
         } else if (e.target.matches('.arrow-back')) {
             renderPages('pages/main')
+        } else if (e.target.matches('.js-start')) {
+            renderGameField()
         }
     })
 }

@@ -17,6 +17,9 @@
         text-transform: uppercase;
     }
 }
+.link {
+    color: $brand-color;
+}
 .album-head,
 .pictures-head {
     display: flex;
