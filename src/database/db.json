@@ -1,0 +1,49 @@
+[
+    {
+        "plants_and_animals": {
+            "categoryName": "Растения и животные",
+            "categoryImg": "./img/plants_and_animals/plants_and_animals.jpg",
+            "words": [
+                {
+                    "rus": "кошка",
+                    "turk": "kedi",
+                    "img": "./img/plants_and_animals/cat.jpg",
+                    "favorite": "false",
+                    "voiceRus": "./sound/plants_and_animals/cat/cat-rus.mp3",
+                    "voiceTurk": "./sound/plants_and_animals/cat/cat-turk.mp3"
+                },
+                {
+                    "rus": "собака",
+                    "turk": "köpek",
+                    "img": "./img/plants_and_animals/dog.jpg",
+                    "favorite": "false",
+                    "voiceRus": "./sound/plants_and_animals/cat/dog-rus.mp3",
+                    "voiceTurk": "./sound/plants_and_animals/cat/dog-turk.mp3"
+                },
+                {
+                    "rus": "животные",
+                    "turk": "hayvanlar",
+                    "img": "./img/plants_and_animals/animals.jpg",
+                    "favorite": "false",
+                    "voiceRus": "./sound/plants_and_animals/cat/animals-rus.mp3",
+                    "voiceTurk": "./sound/plants_and_animals/cat/animals-turk.mp3"
+                }
+            ]
+
+        },
+        "food": {
+            "categoryName": "Еда",
+            "categoryImg": "./img/food/food.jpg",
+            "words": [
+                {
+                    "rus": "банан",
+                    "turk": "muz",
+                    "img": "./img/food/banan.jpg",
+                    "favorite": "false",
+                    "voiceRus": "./sound/food/banan/banan-rus.mp3",
+                    "voiceTurk": "./sound/food/banan/banan-turk.mp3"
+                }
+            ]
+        }
+    }
+]

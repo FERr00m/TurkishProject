@@ -1,14 +1,16 @@
 const burgerMenu = () => {
     try {
-        const menu = document.querySelector('.js-navigation');
+        const menu = document.querySelector('.js-navigation'),
+            jsBurgerMenu = document.querySelector('.js-burger-menu'),
+            closeBtn = document.querySelector('.close-btn');
 
-        document.addEventListener('click', (e) => {
+            closeBtn.addEventListener('click', () => {
+                menu.classList.remove('active-menu');
+            })
+
+            jsBurgerMenu.addEventListener('click', (e) => {
             if (e.target.closest('.js-burger-menu')) {
                 menu.classList.add('active-menu');
-            } else if (e.target === menu) {
-                return;
-            } else {
-                menu.classList.remove('active-menu');
             }
         });
     } catch (error) {

@@ -14,8 +14,14 @@ $button-color: $brand-color;
  */
 .button {
   display: block;
-  padding: 1rem;
-  color: $button-color;
+  padding: .8rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: $main-gradient;
+  border-radius: 5px;
+  border: none;
+  margin: 0 auto;
   // … etc.
 
   /**

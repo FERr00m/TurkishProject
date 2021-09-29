@@ -73,8 +73,8 @@ module.exports = {
                 collapseWhitespace: false
             }
 		}),
-        new HtmlWebpackPlugin(generateHTML('promo')), // Генерация доп страниц HTML
-        // new HtmlWebpackPlugin(generateHTML('new')),
+        //new HtmlWebpackPlugin(generateHTML('main')), // Генерация доп страниц HTML
+        //new HtmlWebpackPlugin(generateHTML('choice')),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: `css/${filename('css')}`
@@ -87,6 +87,10 @@ module.exports = {
                 },
                 {
                     from: "fonts/**",
+                    to: path.resolve(__dirname, 'build')
+                },
+                {
+                    from: "pages/**",
                     to: path.resolve(__dirname, 'build')
                 },
             ]

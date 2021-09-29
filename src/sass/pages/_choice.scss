@@ -1,0 +1,36 @@
+.header-choice-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    & a {
+        display: flex;
+    }
+}
+.arrow-back {
+    margin-right: .5rem;
+}
+.choice {
+    margin-bottom: 25px;
+}
+.word-wrap {
+    display: flex;
+    align-items: center;
+    height: 106px;
+    border-bottom: 1px solid #000;
+}
+.word-body {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    &__descr {
+        margin-right: auto;
+    }
+    &__descr .word-rus {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+    &__descr .word-another {
+        color: $brand-color;
+        font-size: 1.1rem;
+    }
+}
