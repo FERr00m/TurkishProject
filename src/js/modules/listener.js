@@ -9,9 +9,11 @@ const listener = () => {
             let attr = e.target.closest('.js-categories').getAttribute('data-category');
             renderPages('pages/choice', attr);
         } else if (e.target.matches('.arrow-back')) {
-            renderPages('pages/main')
+            renderPages('pages/main');
         } else if (e.target.matches('.js-start')) {
-            renderGameField()
+            renderGameField();
+        } else if (e.target.matches('.js-close')) {
+            renderPages('pages/main');
         }
     })
 }

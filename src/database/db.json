@@ -6,6 +6,7 @@
             "words": [
                 {
                     "rus": "кошка",
+                    "eng": "cat",
                     "turk": "kedi",
                     "img": "./img/plants_and_animals/cat.jpg",
                     "favorite": "false",
@@ -14,6 +15,7 @@
                 },
                 {
                     "rus": "собака",
+                    "eng": "dog",
                     "turk": "köpek",
                     "img": "./img/plants_and_animals/dog.jpg",
                     "favorite": "false",
@@ -22,6 +24,7 @@
                 },
                 {
                     "rus": "животные",
+                    "eng": "animals",
                     "turk": "hayvanlar",
                     "img": "./img/plants_and_animals/animals.jpg",
                     "favorite": "false",
@@ -37,6 +40,7 @@
             "words": [
                 {
                     "rus": "банан",
+                    "eng": "banan",
                     "turk": "muz",
                     "img": "./img/food/banan.jpg",
                     "favorite": "false",

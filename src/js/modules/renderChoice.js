@@ -8,13 +8,14 @@ const renderChoice = (database, attr) => {
     jsCounter.textContent = words.length;
 
     picturesBody.innerHTML = '';
+    picturesBody.setAttribute('data-category', attr);
 
     words.forEach(word => {
         picturesBody.insertAdjacentHTML('beforeend', `
         <div class="word-wrap">
             <div class="container">
                 <div class="word-body">
-                    <img src="${word.img}" width="120" height="70" alt="${word.rus}">
+                    <img src="${word.img}" width="120" height="70" alt="${word.rus}" data-name="${word.eng}">
 
                     <div class="word-body__descr">
                         <div class="word-rus">${word.rus}</div>
@@ -25,7 +26,7 @@ const renderChoice = (database, attr) => {
                 </div>
             </div>
         </div>
-        `)
+        `);
     });
 
 

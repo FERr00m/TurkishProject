@@ -11,6 +11,8 @@ import burger from '@/img/burger';
 import item from '@/img/item';
 import favorite from '@/img/favorite'
 import arrow from '@/img/arrow';
+import close from '@/img/close';
+import sound from '@/img/sound';
 
 //import category images
 //animals

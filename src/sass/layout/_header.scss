@@ -10,6 +10,9 @@
         margin-right: auto;
         @include titleH1;
     }
+    &__more {
+        cursor: pointer;
+    }
 }
 .header-container {
     height: 100%;
@@ -66,6 +69,7 @@
     height: 2rem;
     margin-right: .5rem;
     margin-left: -4px;
+    cursor: pointer;
 }
 .tabs {
     display: flex;
@@ -78,6 +82,7 @@
         padding: .2rem;
         border: none;
         background-color: transparent;
+        cursor: pointer;
     }
     &__button.active {
         background-color: $BGbody;
