@@ -16,7 +16,6 @@ const gameField = obj => {
 
     game.changeProgressbar()
     game.listener()
-    game.getWords()
 
 }
 

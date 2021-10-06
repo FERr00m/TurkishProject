@@ -10,7 +10,18 @@ class Game {
 
     start() {
         console.log('The game is start!');
-        this.renderField();
+        let wordsOrder = this.getWordsRandom();
+console.log(wordsOrder);
+        for (let x = 0; x < wordsOrder.length; x++) {
+            console.log(wordsOrder[x]);
+            this.database.words.forEach(word => {
+                if (word.eng === wordsOrder[x]) {
+                    console.log('YEs', word.eng);
+                }
+
+            })
+        }
+        return
     }
 
     about() {
@@ -18,9 +29,10 @@ class Game {
         console.log('Категория', this.category);
         console.log('Количество слов для игры', this.wordСount);
         console.log('step', this.stepProgress);
+        return
     }
 
-    getWords() {
+    getWordsRandom() {
 
         /**
          * Функция генерация случайного числа от min до max включительно
@@ -55,6 +67,8 @@ class Game {
         }
 
         console.log('Итоговый массив слов', arrWords);
+        return arrWords;
+
 
     }
 
@@ -63,7 +77,7 @@ class Game {
     }
 
     renderWord() {
-
+        return
     }
 
     changeProgressbar() {
@@ -77,6 +91,7 @@ class Game {
             }
             this.progressbar.style.width = `${progress}%`;
         }, 1000)
+        return
 
     }
 
@@ -84,6 +99,7 @@ class Game {
         this.gameContent.addEventListener('click', e => {
             console.log('contentGame', e.target);
         })
+        return
     }
 }
 
