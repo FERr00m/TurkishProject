@@ -2,8 +2,15 @@ const renderChoice = (database, attr) => {
     const picturesBody = document.getElementById('words'),
         jsChoiceTitle = document.querySelector('.js-choice-title'),
         jsCounter = document.querySelector('.js-counter'),
-        words = database[0][attr].words;
+        words = database[0][attr].words,
+        jsCounterRange = document.querySelector('.js-counter-range'),
+        jsCounterRangeValue = document.querySelector('.js-counter-range-value');
 
+    jsCounterRange.addEventListener('input', () => {
+        jsCounterRangeValue.textContent = jsCounterRange.value;
+    });
+
+    jsCounterRange.setAttribute('max', words.length)
     jsChoiceTitle.textContent = database[0][attr].categoryName;
     jsCounter.textContent = words.length;
 

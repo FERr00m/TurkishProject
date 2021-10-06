@@ -33,7 +33,6 @@ import renderPages from './modules/renderPages';
 import listener from './modules/listener';
 
 
-
 //launch js modules
 renderPages('pages/main');
 listener();

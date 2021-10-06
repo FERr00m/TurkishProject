@@ -30,6 +30,24 @@
                     "favorite": "false",
                     "voiceRus": "./sound/plants_and_animals/cat/animals-rus.mp3",
                     "voiceTurk": "./sound/plants_and_animals/cat/animals-turk.mp3"
+                },
+                {
+                    "rus": "слон",
+                    "eng": "elephant",
+                    "turk": "fil",
+                    "img": "./img/plants_and_animals/animals.jpg",
+                    "favorite": "false",
+                    "voiceRus": "./sound/plants_and_animals/cat/animals-rus.mp3",
+                    "voiceTurk": "./sound/plants_and_animals/cat/animals-turk.mp3"
+                },
+                {
+                    "rus": "лев",
+                    "eng": "lion",
+                    "turk": "aslan",
+                    "img": "./img/plants_and_animals/animals.jpg",
+                    "favorite": "false",
+                    "voiceRus": "./sound/plants_and_animals/cat/animals-rus.mp3",
+                    "voiceTurk": "./sound/plants_and_animals/cat/animals-turk.mp3"
                 }
             ]
 

@@ -34,3 +34,16 @@
         font-size: 1.1rem;
     }
 }
+.label-counter-range {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    & input {
+        align-self: normal;
+    }
+}
+.start-btn {
+    margin-bottom: 1rem;
+}

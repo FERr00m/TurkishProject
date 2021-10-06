@@ -1,11 +1,11 @@
 import burgerMenu from './burgerMenu';
 import renderCategories from './renderCategories';
-import getData from './getData'
 import database from '@/database/db';
 import $ from 'jquery';
 import renderChoice from './renderChoice';
+import gameField from './gameField';
 
-const renderPages = (page, attr = null) => {
+const renderPages = (page, obj = null) => {
 
     $.ajax({
         type: "get",
@@ -14,11 +14,14 @@ const renderPages = (page, attr = null) => {
         dataType: "html",
         success: function (response) {
             $('#body').html(response)
+
             if(page === 'pages/main') {
                 renderCategories(database);
                 burgerMenu();
             } else if (page === 'pages/choice') {
-                renderChoice(database, attr);
+                renderChoice(database, obj.attr);
+            } else if (page === 'pages/gameField') {
+                gameField(obj)
             }
 
 
