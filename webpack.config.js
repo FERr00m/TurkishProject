@@ -150,7 +150,7 @@ module.exports = {
                                   {
                                     // Options
                                     browsers: 'last 5 versions',
-                                    autoprefixer: { grid: true }
+                                    //autoprefixer: { grid: true }
                                   },
                                 ],
                             ],
@@ -201,7 +201,7 @@ module.exports = {
         client: {
             overlay: {
                 errors: true,
-                warnings: true,
+                warnings: false,
             },
             progress: true,
         },  // оверлей при ошибках

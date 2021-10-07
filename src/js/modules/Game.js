@@ -16,7 +16,7 @@ console.log(wordsOrder);
             console.log(wordsOrder[x]);
             this.database.words.forEach(word => {
                 if (word.eng === wordsOrder[x]) {
-                    console.log('YEs', word.eng);
+                    console.log('YEs', word);
                 }
 
             })
@@ -44,20 +44,24 @@ console.log(wordsOrder);
         function getRandomInt(min, max) {
             return Math.floor(Math.random() * ((max + 1) - min)) + min;
         }
+        function getRandomWordFromArray(arr) {
+            const randomNumber = getRandomInt(1, arr.length),
+                word = arr[randomNumber - 1];  // минус один для работы с массивами
+
+            return word;
+        }
 
         const dataWords = this.database.words,  // Исходный массив слов
             arrWords = [];  // Будущий массив случайных слов
 
         let counter = 0,
-            randomNumber = getRandomInt(1, dataWords.length),
-            word = dataWords[randomNumber - 1]; // минус один для работы с массивами
+            word = getRandomWordFromArray(dataWords);
 
         arrWords.push(word.eng);
         counter++
 
         while (counter < this.wordСount) {
-            randomNumber = getRandomInt(1, dataWords.length);
-            word = dataWords[randomNumber - 1];
+            word = getRandomWordFromArray(dataWords);
             if (arrWords.includes(word.eng)) {
                 continue;
             }
